@@ -52,7 +52,7 @@ jobs:
           name: web-app
           path: build/
 
-    deploy:
+  deploy:
     needs: package
 
     runs-on: ubuntu-latest
@@ -65,7 +65,6 @@ jobs:
       name: github-pages
 
     steps:
-
       - uses: actions/checkout@v4
 
       - name: Setup Pages
